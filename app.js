@@ -13,6 +13,7 @@ app.use(bodyParser.json({limit: '100mb'}));
 
 // Path
 app.use('/register', authController.Register);
+app.use('/login', authController.Login);
 
 // Server port
 const PORT  = process.env.PORT || 3000;
